@@ -1,4 +1,4 @@
-import styles from './index.module.css';
+import styles from './TotalPad.module.css';
 
 type Props = {
   computedInput: string;

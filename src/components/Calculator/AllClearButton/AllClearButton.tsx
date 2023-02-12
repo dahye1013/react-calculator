@@ -1,4 +1,4 @@
-import styles from './index.module.css';
+import styles from './AllClearButton.module.css';
 
 type Props = {
   onClick: (arg: string) => () => void;

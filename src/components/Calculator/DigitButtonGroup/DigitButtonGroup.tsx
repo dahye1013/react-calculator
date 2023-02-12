@@ -1,10 +1,10 @@
-import styles from './index.module.css';
+import styles from './DigitButtonGroup.module.css';
 
 type Props = {
   onClick: (n: number) => () => void;
 };
 
-const DigitButton = (props: Props) => {
+const DigitButtonGroup = (props: Props) => {
   return (
     <div className={`${styles.digits} flex`}>
       {DIGIT_NUMBERS.map((n) => (
@@ -16,6 +16,6 @@ const DigitButton = (props: Props) => {
   );
 };
 
-export default DigitButton;
+export default DigitButtonGroup;
 
 const DIGIT_NUMBERS = Array.from({ length: 10 }, (_, i) => 9 - i);

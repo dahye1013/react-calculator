@@ -1,12 +1,12 @@
 import { type Operator, OPERATE, OPERATORS } from '@/constants/operator';
 
-import styles from './index.module.css';
+import styles from './OperationButtonGroup.module.css';
 
 type Props = {
   onClick: (o: Operator | typeof OPERATE) => () => void;
 };
 
-const OperationButton = (props: Props) => {
+const OperationButtonGroup = (props: Props) => {
   return (
     <div className={`${styles.operations} subgrid`}>
       {OPERATORS.map((operation) => (
@@ -25,4 +25,4 @@ const OperationButton = (props: Props) => {
   );
 };
 
-export default OperationButton;
+export default OperationButtonGroup;
